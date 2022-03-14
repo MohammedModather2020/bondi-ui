@@ -16,10 +16,12 @@
 * 2- Section Style
    2.0- NavBar
    2.1- Landing 
+   2.2- Features
 * 3- Common Style
    3.0- Button Primary
    3.1- Form Control
    3.1- Place Holder
+   3.3- Section Title
 */
 /* 
 /** 1- Genral Style */
@@ -141,6 +143,36 @@ body{
   line-height: 1.7;
   margin-block: 1rem;
 }
+/** 2.2- Features */
+.features{
+
+}
+.features .feature .icon{
+  height: 200px;
+}
+.features .feature .icon svg{
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.features .feature .icon svg:first-of-type{
+  font-size: 12rem;
+  color: var(--sectionColor);
+}
+.features .feature .icon svg:last-of-type{
+  color: var(--greenColor);
+}
+.features .feature .title{
+  font-size: 1.4rem;
+  color: var(--yellowColor);
+}
+.features .feature .desc{
+  font-size: .85rem;
+}
+
 /** 3- Common Style */
 /**  3.0- Button Primary */
 .b-primary{
@@ -169,4 +201,22 @@ body{
 ::placeholder{
   font-size: .7rem;
   color: #bbb !important;
+}
+/** 3.3- Section Title */
+.section-title::after{
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--greenColor);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.section-title .desc{
+  font-size: .85rem;
 }
