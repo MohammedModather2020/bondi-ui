@@ -126,6 +126,20 @@ body{
   -ms-transform: scale(1);
   -o-transform: scale(1);
 }
+/** 2.1- Landing */
+.landing{
+  background-color: var(--darkColor);
+  min-height: calc(100vh - 54px);
+}
+.landing .title{
+  color: var(--sectionColor);
+}
+.landing .desc{
+  font-size: .9rem;
+  width: 55%;
+  line-height: 1.7;
+  margin-block: 1rem;
+}
 /** 3- Common Style */
 /**  3.0- Button Primary */
 .b-primary{
