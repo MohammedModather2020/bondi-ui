@@ -132,7 +132,7 @@ body{
 /** 2.1- Landing */
 .landing{
   background-color: var(--darkColor);
-  min-height: calc(100vh - 54px);
+  min-height: calc(100vh);
 }
 .landing .title{
   color: var(--sectionColor);
@@ -144,9 +144,6 @@ body{
   margin-block: 1rem;
 }
 /** 2.2- Features */
-.features{
-
-}
 .features .feature .icon{
   height: 200px;
 }
