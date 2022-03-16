@@ -195,11 +195,23 @@ body{
   position: relative;
   padding: .5rem;
   overflow: hidden;
+  border-radius: .4rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem;
+}
+.works .work .image img{
+  border-radius: .4rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem;
 }
 .works .work::before{
-  font-weight: bold;
-  content: attr(data-work);
   position: absolute;
+  content: attr(data-work);
+  font-weight: bold;
   text-transform: uppercase;
   width: calc(100% - 15px);
   height: calc(100% - 15px);
@@ -215,6 +227,11 @@ body{
   -moz-transform: translateX(calc(-100% - 8px));
   -ms-transform: translateX(calc(-100% - 8px));
   -o-transform: translateX(calc(-100% - 8px));
+  border-radius: .4rem;
+  -webkit-border-radius: .4rem;
+  -moz-border-radius: .4rem;
+  -ms-border-radius: .4rem;
+  -o-border-radius: .4rem;
   transition:  transform.5s ease-in-out ;
   -webkit-transition:  transform.5s ease-in-out ;
   -moz-transition:  transform.5s ease-in-out ;
