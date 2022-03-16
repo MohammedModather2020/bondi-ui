@@ -17,6 +17,7 @@
    2.0- NavBar
    2.1- Landing 
    2.2- Features
+   2.3- Works
 * 3- Common Style
    3.0- Button Primary
    3.1- Form Control
@@ -169,7 +170,71 @@ body{
 .features .feature .desc{
   font-size: .85rem;
 }
-
+/** 2.3- Works */
+.works{
+  background-color: var(--sectionColor);
+}
+.works .list-item li{
+  font-size: .9rem;
+  cursor: pointer;
+}
+.works .list-item li.active{
+  background-color: var(--redColor);
+  color: var(--sectionColor);
+  padding: .5rem 2rem;
+  border-radius: .5rem;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+.works .list-item li:not(.active):hover{
+  color: var(--redColor);
+}
+.works .work{
+  position: relative;
+  padding: .5rem;
+  overflow: hidden;
+}
+.works .work::before{
+  font-weight: bold;
+  content: attr(data-work);
+  position: absolute;
+  text-transform: uppercase;
+  width: calc(100% - 15px);
+  height: calc(100% - 15px);
+  background-color: rgb(51 209 204 / 76%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  color: white;
+  transform: translateX(calc(-100% - 8px));
+  -webkit-transform: translateX(calc(-100% - 8px));
+  -moz-transform: translateX(calc(-100% - 8px));
+  -ms-transform: translateX(calc(-100% - 8px));
+  -o-transform: translateX(calc(-100% - 8px));
+  transition:  transform.5s ease-in-out ;
+  -webkit-transition:  transform.5s ease-in-out ;
+  -moz-transition:  transform.5s ease-in-out ;
+  -ms-transition:  transform.5s ease-in-out ;
+  -o-transition:  transform.5s ease-in-out ;
+}
+.works .work:hover:before{
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.works .b-primary{
+  font-size: .85rem;
+  padding-block: .7rem;
+  padding-inline: 1.5rem;
+}
 /** 3- Common Style */
 /**  3.0- Button Primary */
 .b-primary{
