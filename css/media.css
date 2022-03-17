@@ -17,4 +17,7 @@
     margin: auto;
     line-height: 1.9;
   }
+  .blogs .card{
+    margin-bottom: 1rem;
+  }
 }
