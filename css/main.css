@@ -27,9 +27,10 @@
 * 3- Common Style
    3.0- Button Primary
    3.1- Form Control
-   3.1- Place Holder
+   3.2- PlaceHolder
    3.3- Section Title
-   3.4- PlaceHolder
+   3.4- Scroll Top 
+   3.5- Scroll Bar 
 */
 /* 
 /** 1- Genral Style */
@@ -443,11 +444,7 @@ body{
 .section-title .desc{
   font-size: .85rem;
 }
-/** 3.4 PlaceHolder */
-::placeholder{
-  color: #eee !important;
-}
-/** 3.5- Scroll Top */
+/** 3.4- Scroll Top */
 #scroll-top{
   display: none;
   width: 40px;
@@ -472,4 +469,29 @@ body{
 }
 #scroll-top:hover{
   background-color:var(--greenColor);
+}
+/** 3.5- Scroll Bar */
+::-webkit-scrollbar {
+  background-color: var(--greenColor);
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--darkColor);
+  border-radius: 7px
+}
+::-moz-scrollbar {
+  background-color: var(--greenColor);
+  width: 8px;
+}
+::-moz-scrollbar-thumb {
+  background-color: var(--darkColor);
+  border-radius: 7px
+}
+::-o-scrollbar {
+  background-color: var(--greenColor);
+  width: 8px;
+}
+::-o-scrollbar-thumb {
+  background-color: var(--darkColor);
+  border-radius: 7px;
 }
