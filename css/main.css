@@ -22,11 +22,13 @@
    2.5- Teams
    2.6- Projects
    2.7- Blogs
+   2.8- Subscribe
 * 3- Common Style
    3.0- Button Primary
    3.1- Form Control
    3.1- Place Holder
    3.3- Section Title
+   3.4- PlaceHolder
 */
 /* 
 /** 1- Genral Style */
@@ -323,6 +325,23 @@ body{
   color: #888;
   line-height: 1.8;
 }
+/** 2.8- Subscribe */
+.subscribe{
+  background-color: var(--yellowColor);
+}
+.subscribe .title{
+  font-size: 1.2rem;
+}
+.subscribe input{
+  border: none;
+  border-bottom: 1px solid white;
+}
+.subscribe input:focus{
+  outline: none;
+}
+.subscribe .btn.b-primary{
+  background-color: var(--redColor);
+}
 /** 3- Common Style */
 /**  3.0- Button Primary */
 .b-primary{
@@ -369,4 +388,8 @@ body{
 }
 .section-title .desc{
   font-size: .85rem;
+}
+/** 3.4 PlaceHolder */
+::placeholder{
+  color: #eee !important;
 }
