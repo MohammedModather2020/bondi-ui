@@ -1,5 +1,26 @@
 $(function () {
   'use strict';
+  // Add Smooth Scroll
+  $('html , body').animate({ scrollTop: 0 }, 200);
+  var scrollButton = $('#scroll-top');
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      scrollButton.show();
+    } else {
+      scrollButton.hide();
+    }
+  });
+  //----------------------------------------------------------------------------->
+  // click button to scroll top
+  scrollButton.on('click', function () {
+    $('html ,body').animate(
+      {
+        scrollTop: 0,
+      },
+      200
+    );
+  });
+  //----------------------------------------------------------------------------->
   // list items click to move section
   $('.navbar .navbar-nav .nav-link').on('click', function () {
     $('html,body').animate(
@@ -10,12 +31,14 @@ $(function () {
     );
     $(this).parent().addClass('active').siblings().removeClass();
   });
+  //----------------------------------------------------------------------------->
   // collapsed navbar mobile screen
   $('.navbar .navbar-nav .nav-link').on('click', function () {
     $('.navbar-toggler').addClass('collapsed');
     $('.navbar-collapse').addClass('collapse');
     $('.navbar-collapse').removeClass('show');
   });
+  //----------------------------------------------------------------------------->
   // trigger mixItup
   mixitup('#mixup-selector-works');
   //----------------------------------------------------------------------------->
