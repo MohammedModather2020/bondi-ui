@@ -424,7 +424,7 @@ body{
 /** 3.2 PlaceHolder */
 ::placeholder{
   font-size: .7rem;
-  color: #bbb !important;
+  color: #eee !important;
 }
 /** 3.3- Section Title */
 .section-title::after{
