@@ -23,6 +23,7 @@
    2.6- Projects
    2.7- Blogs
    2.8- Subscribe
+   2.9- Footer
 * 3- Common Style
    3.0- Button Primary
    3.1- Form Control
@@ -341,6 +342,59 @@ body{
 }
 .subscribe .btn.b-primary{
   background-color: var(--redColor);
+}
+/** 2.9- Footer */
+.footer{
+  background-color: var(--darkColor);
+}
+.footer .desc{
+  line-height: 1.8;
+  font-size: .85rem;
+}
+.footer .copyright a{
+  text-decoration: none;
+  font-size: .9rem;
+}
+.footer .copyright a:first-of-type{
+  color: var(--greenColor);
+}
+.footer .copyright a:last-of-type{
+  color: var(--yellowColor);
+}
+.footer .links li a{
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  margin-bottom: .5rem;
+  font-size: .9rem;
+}
+.footer .contact-us .btn.b-primary{
+  background-color: var(--redColor);
+}
+.footer .contact-us .btn.b-primary a{
+  font-size: .9rem;
+}
+.footer .contact-us .social-links li svg{
+  width: 25px;
+  height: 25px;
+}
+.footer .contact-us .social-links li svg.facebook{
+  background-color: #1877f2;
+}
+.footer .contact-us .social-links li svg.twitter{
+  background-color: #1da1f2;
+}
+.footer .contact-us .social-links li svg.linkedin{
+  background-color: #0077b5;
+}
+.footer .contact-us .social-links li svg.whatsapp{
+  background-color: rgb(37, 211, 102);
+}
+.footer .contact-us .social-links li svg.instagram{
+  background-color: rgb(228, 64, 95);
+}
+.footer .contact-us .social-links li svg.youtube{
+  background-color: #ff0000;
 }
 /** 3- Common Style */
 /**  3.0- Button Primary */
