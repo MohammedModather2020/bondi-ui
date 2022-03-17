@@ -47,6 +47,9 @@ $(function () {
     $(this).addClass('active').siblings().removeClass('active');
   });
   //----------------------------------------------------------------------------->
+  // trigger aos animate
+  AOS.init();
+  //----------------------------------------------------------------------------->
   // trigger swiper
   var swiper = new Swiper('.technologies .swiper', {
     spaceBetween: 20,
