@@ -20,7 +20,8 @@
    2.3- Works
    2.4- Stuff
    2.5- Teams
-   2.5- Projects
+   2.6- Projects
+   2.7- Blogs
 * 3- Common Style
    3.0- Button Primary
    3.1- Form Control
@@ -301,6 +302,26 @@ body{
 }
 .projects .desc{
   font-size: .9rem;
+}
+/** 2.7- Blogs */
+.blogs .card{
+  color: #19283f;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 0 !important;
+}
+.blogs .card .time{
+  font-size: .8rem;
+  margin-top: -.3rem;
+  display: block;
+}
+.blogs .card .card-title{
+  font-size: .9rem;
+  font-weight: bolder;
+}
+.blogs .card .desc{
+  font-size: .8rem;
+  color: #888;
+  line-height: 1.8;
 }
 /** 3- Common Style */
 /**  3.0- Button Primary */
