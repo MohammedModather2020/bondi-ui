@@ -11,8 +11,10 @@
     font-size: 2.2rem;
   }
   .landing .desc,
-  .stuff .container > .desc{
+  .stuff .container > .desc,
+  .teams .container > .desc{
     width: 90%;
+    margin: auto;
     line-height: 1.9;
   }
 }
