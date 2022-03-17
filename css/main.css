@@ -18,6 +18,8 @@
    2.1- Landing 
    2.2- Features
    2.3- Works
+   2.4- Stuff
+   2.5- Teams
 * 3- Common Style
    3.0- Button Primary
    3.1- Form Control
@@ -266,6 +268,31 @@ body{
 }
 .stuff .text .b-primary a{
   font-size: .85rem;
+}
+/** 2.6- Teams */
+.teams{
+  background-color: var(--sectionColor);
+}
+.teams .title{
+  color: var(--yellowColor);
+}
+.teams .container > .desc{
+  font-size: .85rem;
+  line-height: 1.8;
+  width: 55%;
+}
+.teams .team .name{
+  font-size: 1.3rem;
+  background-color: var(--greenColor);
+  padding-block: .7rem;
+}
+.teams .team .desc{
+  line-height: 1.8;
+  font-size: .8rem;
+  text-align-last: center;
+  text-align: justify;
+  padding-inline: 1rem;
+  padding-bottom: .7rem;
 }
 /** 3- Common Style */
 /**  3.0- Button Primary */
