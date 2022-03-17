@@ -26,12 +26,26 @@ $(function () {
   //----------------------------------------------------------------------------->
   // trigger swiper
   var swiper = new Swiper('.technologies .swiper', {
-    slidesPerView: 7,
     spaceBetween: 20,
+    slidesPerView: 1,
     loop: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
+    },
+    breakpoints: {
+      340: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 7,
+        spaceBetween: 50,
+      },
     },
   });
 });
