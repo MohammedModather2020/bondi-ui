@@ -6,4 +6,12 @@
     box-shadow: unset;
     border-color: var(--yellowColor);
   }
+  .landing .title {
+    font-weight: bolder;
+    font-size: 2.2rem;
+  }
+  .landing .desc{
+    width: 90%;
+    line-height: 1.9;
+  }
 }
