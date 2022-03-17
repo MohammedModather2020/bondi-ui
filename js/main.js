@@ -50,6 +50,16 @@ $(function () {
   // trigger aos animate
   AOS.init();
   //----------------------------------------------------------------------------->
+  // Start Loading
+  $('.loading-overlay .spinner').fadeOut(3000, function () {
+    $('body').css('overflow', 'auto');
+    $(this)
+      .parent()
+      .fadeOut(3000, function () {
+        $(this).remove();
+      });
+  });
+  //----------------------------------------------------------------------------->
   // trigger swiper
   var swiper = new Swiper('.technologies .swiper', {
     spaceBetween: 20,
