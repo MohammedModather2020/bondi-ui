@@ -33,20 +33,26 @@
         </button> <!-- ./navbar-toggler -->
         <div class="collapse navbar-collapse pb-3 pb-md-0" id="main">
           <ul class="navbar-nav ms-auto mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active p-lg-3" aria-current="page" href="#">Home</a>
+            <li class="nav-item active">
+              <a class="nav-link p-lg-3" aria-current="page" href="index.html">Home</a>
             </li> <!-- ./nav-item -->
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#services">Services</a>
+              <a class="nav-link p-lg-3" data-value="works" href="#works">Works</a>
             </li> <!-- ./nav-item -->
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#portfolio">Portfolio</a>
+              <a class="nav-link p-lg-3" data-value="teams" href="#teams">Teams</a>
             </li> <!-- ./nav-item -->
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#about">About</a>
+              <a class="nav-link p-lg-3" data-value="technologies" href="#technologies">Technologies</a>
             </li> <!-- ./nav-item -->
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#contact">Contact</a>
+              <a class="nav-link p-lg-3" data-value="projects" href="#projects">Projects</a>
+            </li> <!-- ./nav-item -->
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" data-value="blog" href="#blog">Blog</a>
+            </li> <!-- ./nav-item -->
+            <li class="nav-item">
+              <a class="nav-link p-lg-3" data-value="contact-us" href="#contact-us">Contact us</a>
             </li> <!-- ./nav-item -->
           </ul> <!-- ./navbar-nav -->
           <div class="nav-search ms-5 me-4 d-none d-md-block position-relative">
@@ -69,7 +75,7 @@
       </div> <!-- ./container -->
     </div> <!-- ./landing -->
     <!--* Features -->
-    <div class="features py-5 text-center">
+    <div id="features" class="features py-5 text-center">
       <div class="container">
         <div class="section-title mb-5 position-relative">
           <img src="assets/images/icon-section-title.png" alt="icon-section-title"/>
@@ -111,7 +117,7 @@
       </div> <!-- ./container -->
     </div> <!-- ./features -->
     <!--* Works -->
-    <div class="works text-center py-5">
+    <div id="works" class="works text-center py-5">
       <div class="container">
         <div class="section-title mb-5 position-relative">
           <img src="assets/images/icon-section-title.png" alt="icon-section-title"/>
@@ -213,7 +219,7 @@
       </div> <!-- ./container -->
     </div> <!-- ./stuff -->
     <!--* Teams -->
-    <div class="teams text-center py-5">
+    <div id="teams" class="teams text-center py-5">
       <div class="container">
         <h2 class="title fw-bolder">Meat The Teams</h2>
         <p class="desc text-black-50 mx-md-auto">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
@@ -266,7 +272,7 @@
       </div> <!-- ./container -->
     </div> <!-- ./teams -->
     <!--* Technologies -->
-    <div class="technologies text-center py-5">
+    <div id="technologies" class="technologies text-center py-5">
       <div class="container">
         <div class="swiper">
           <div class="swiper-wrapper align-items-center">
@@ -315,7 +321,7 @@
       </div> <!-- ./container -->
     </div> <!-- ./technologies -->
     <!--* Projects -->
-    <div class="projects text-center py-5">
+    <div id="projects" class="projects text-center py-5">
       <div class="container">
         <h2 class="title text-white">Start Your Project Now</h2>
         <p class="desc text-white-50 mb-4">Leave your description and we start the engine.Don't worry,you can cancel anytime</p>
@@ -323,7 +329,7 @@
       </div> <!-- ./container -->
     </div> <!-- ./projects -->
     <!--* Blogs -->
-    <div class="blogs py-5">
+    <div id="blog" class="blogs py-5">
       <div class="container">
         <div class="section-title mb-5 position-relative text-center">
           <img src="assets/images/icon-section-title.png" alt="icon-section-title"/>
@@ -371,7 +377,7 @@
       </div> <!-- ./container -->
     </div> <!-- ./blogs -->
     <!--* Subscribe -->
-    <div class="subscribe text-center py-5">
+    <div id="contact-us" class="subscribe text-center py-5">
       <div class="container">
         <form class="row align-items-center">
           <div class="col-md-3">
