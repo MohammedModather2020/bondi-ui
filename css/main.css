@@ -20,6 +20,7 @@
    2.3- Works
    2.4- Stuff
    2.5- Teams
+   2.5- Projects
 * 3- Common Style
    3.0- Button Primary
    3.1- Form Control
@@ -269,7 +270,7 @@ body{
 .stuff .text .b-primary a{
   font-size: .85rem;
 }
-/** 2.6- Teams */
+/** 2.5- Teams */
 .teams{
   background-color: var(--sectionColor);
 }
@@ -293,6 +294,13 @@ body{
   text-align: justify;
   padding-inline: 1rem;
   padding-bottom: .7rem;
+}
+/** 2.6- Projects */
+.projects{
+  background-color: var(--darkColor);
+}
+.projects .desc{
+  font-size: .9rem;
 }
 /** 3- Common Style */
 /**  3.0- Button Primary */
